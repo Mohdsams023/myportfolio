@@ -101,7 +101,8 @@ header {
     }
 
     .hero-section {
-        flex-direction: column;
+        
+        flex-direction: column-reverse;
     }
 
     .intro, .links {
@@ -111,6 +112,17 @@ header {
     .section-content {
         flex-direction: column;
     }
+
+    .myskills {
+        margin-top: 20px;
+    }
+
+    .myskills i {
+        color: #9A33FF;
+        font-size: 10px;
+        margin: 5px 10px;
+    }
+    
 }
 
 .hero-section {
@@ -125,7 +137,6 @@ header {
 .intro, .links {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     align-items: center;
 }
@@ -175,20 +186,21 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    margin: 50px 20px;
 }
 
 .section-heading h1 {
     color: #FF8660;
 }
 
-.section-content {
+.myskills {
     margin-top: 20px;
 }
 
-.section-content img {
-    height: 50px;
-    margin: 30px;
+.myskills i {
+    color: #9A33FF;
+    font-size: 50px;
+    margin: 10px 20px;
 }
 
 .info {
@@ -196,11 +208,18 @@ header {
     flex-direction: column;
 }
 
+.attribiuts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .info a {
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 5px;
     text-decoration: none;
     color: white;
+    font-weight: 200;
    
 }
 
@@ -208,9 +227,8 @@ header {
     text-decoration: underline;
 }
 
-.info span {
+.info i {
     margin-right: 10px;
-    margin-bottom: 0;
     font-size: 15px;
     color: #FF8660;
 }
@@ -304,7 +322,8 @@ header {
     font-size: 15px;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 40px;
+    margin: 0 40px;
+    text-align: center;
   }
 
   .about-image {
