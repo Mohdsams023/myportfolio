@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -19,15 +21,33 @@
             <a href="">Projects</a>
             <a href="">Contact</a>
         </div>
+        <div class="menu-toggle" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </header>
     <main>
         <div class="hero-section">
-            <div class="image">
-                <img src="images/IMG_20230711_154942_372.jpg" alt="Main Image">
+            <div class="intro">
+                <div class="image">
+                    <img src="images/IMG_20230711_154942_372.jpg" alt="Main Image">
+                </div>
+                <h1>Hey. I'm Mohd Samsuddin</h1>
+                <p>I am a seasoned full-stack software engineer specializing in backend development.</p>
             </div>
-            <h1>Hey. I'm Mohd Samsuddin</h1>
-            <p>I am a seasoned full-stack software engineer specializing in backend development.</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Download CV</a>
+            <div class="links">
+                <div class="info">
+                    <a href="#"><span class="material-symbols-outlined">mail</span> mohd.samsuddin023@gmail.com</a
+                        href="#">
+                    <a href="#"><span class="material-symbols-outlined">location_on</span> Meerut</a>
+                    <a href="#"><span class="material-symbols-outlined">call</span> 9119983267</a>
+                    <a href="#"><span class="material-symbols-outlined">link</span> https://github.com/Mohdsams023</a>
+                </div>
+                <div class="cv-btn">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Download CV</a>
+                </div>
+            </div>
         </div>
         <div class="skill-section">
             <div class="section-heading">
@@ -41,17 +61,49 @@
             </div>
         </div>
         <div class="project-section">
-            <div class="project-card">
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
-                    <h4>Ecommerce Front-End Project</h4>
-                    <p>Created Ecommerce App using html css javascript and bootstrap fully functinol and dynamic including cart page, All products page filters catagory pages login page contact us page </p>
-                    <span>You Can Check Out </span>
-                </a>
+            <div class="section-heading">
+                <h1>PROJECTS</h1>
             </div>
+            <div class="project-card">
+                <div class="card">
+                    <img class="card-image" src="images/ecommerce.png" alt="Project Image">
+                    <div class="card-content">
+                        <h2 class="card-title">Ecommorce App</h2>
+                        <p class="card-description">Created Ecommorce App using html css javascript and bootstrap
+                            crating login, cart, contact us, all product categories page </p>
+                        <a href="https://github.com/Mohdsams023/front-end-ecommerce" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://samswedev.netlify.app/" target="_blank" class="btn">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="about-section">
+            <div class="section-heading">
+                <h1>About Me</h1>
+            </div>
+            <div class="section-content">
+                <div class="para">
+                    <p>Hello!
+                        My name is Samsuddin and I specialize in web developement that utilizes HTML, CSS, JS, and REACT
+                        etc.
+                        I am a highly motivated individual and eternal optimist dedicated to writing clear, concise,
+                        robust code that works. Striving to never stop learning and improving.
+                        When I'm not coding, I am writing bolgs, reading, or picking up some new hands-on art project
+                        like photography.
+                        I like to have my perspective and belief systems challenged so that I see the world through new
+                        eyes.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/aboutImage.png" alt="Image">
+                </div>
+            </div>
+
         </div>
     </main>
-    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
