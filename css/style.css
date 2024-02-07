@@ -4,8 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;  
 }
 
 
@@ -376,4 +375,18 @@ header {
   label {
 
     color: #fff;
+  }
+
+  button {
+    background-color: #9A33FF;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    float: right;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background-color: #780be5;
   }
